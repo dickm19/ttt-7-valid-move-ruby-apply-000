@@ -2,9 +2,9 @@
 def valid_move?(board, move)
   if move >= 0 && move <= 8
     return true
-  else
-    return false
   elsif position_taken?(board[move])
+    return false
+  else
     return false
   end
 end
