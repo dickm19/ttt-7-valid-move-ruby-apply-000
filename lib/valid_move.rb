@@ -8,7 +8,7 @@ def valid_move?(board, move)
     return false
     
   elsif position_taken?
-    return nil
+    return FALSE
     
   end
 end
