@@ -8,7 +8,6 @@ def valid_move?(board, move)
     return false
   else
     return true
-else
     
   end
 end
