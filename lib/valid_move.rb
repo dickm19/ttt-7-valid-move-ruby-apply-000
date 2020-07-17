@@ -1,13 +1,5 @@
 # code your #valid_move? method here
-def valid_move?(board, move)
-  if move >= 0 && move <= 8
-    return true
-  elsif !(move >= 0 && move <= 8)
-    return false
-  elsif position_taken?
-    return false
-  end
-end
+
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(board,index)
@@ -17,4 +9,13 @@ def position_taken?(board,index)
     return true
   end
 end
-  
+
+def valid_move?(board, move)
+  if move >= 0 && move <= 8
+    return true
+  elsif !(move >= 0 && move <= 8)
+    return false
+  elsif position_taken?
+    return false
+  end
+end
