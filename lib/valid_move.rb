@@ -4,7 +4,7 @@ def valid_move?(board, move)
     return true
   elsif !(move >= 0 && move <= 8)
     return false
-  elsif !position_taken?
+  elsif position_taken?
     return false
   end
 end
